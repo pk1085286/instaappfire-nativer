@@ -1,14 +1,13 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
-// Initialize Firebase with your project configuration
 firebase.initializeApp({
   apiKey: 'YOUR_API_KEY',
   authDomain: 'YOUR_AUTH_DOMAIN',
   projectId: 'YOUR_PROJECT_ID',
 });
 
-// Sign up a new user
+
 firebase.auth().createUserWithEmailAndPassword(email, password)
   .then((userCredential) => {
     // User successfully created, do something with the user object
